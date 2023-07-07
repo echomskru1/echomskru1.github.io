@@ -1,0 +1,635 @@
+<html>
+<head><title>Радиостанция "Эхо Москвы" || 7 новостей</title>
+<style type=text/css><!--
+p { font-family: Arial, Tahoma, Verdana, Helvetica, Sans-Serif; font-size: x-small;}
+td { font-family: Arial, Tahoma, Verdana, Helvetica, Sans-Serif; font-size: x-small;}
+li { font-family: Arial, Tahoma, Verdana, Helvetica, Sans-Serif; font-size: x-small;}
+.text { font-family: Arial, Tahoma, Verdana, Helvetica, Sans-Serif; font-size: x-small;}
+//--></style>
+
+<STYLE TYPE="text/javascript">
+<!--/
+tags.P.fontSize = "10pt";
+tags.TD.fontSize = "10pt";
+tags.LI.fontSize = "10pt";
+tags.DIV.visibility = "hidden";
+classes.text.all.fontSize = "10pt";
+//-->
+</STYLE> 
+
+<style type=text/css><!--
+a { font-family: Arial, Tahoma, Verdana, Helvetica, Sans-Serif; color: #cc0000;  text-decoration: none; }
+a:hover { font-family: Arial, Tahoma, Verdana, Helvetica, Sans-Serif; color: #ff0000;  text-decoration: none; }
+a:visited { font-family: Arial, Tahoma, Verdana, Helvetica, Sans-Serif; color: #440000; }
+
+.set { font-family: Arial, Tahoma, Verdana, Helvetica, Sans-Serif; font-size: 10px; color: #000000;  text-align: center; font-weight: bold; }
+
+.set_a { font-family: Arial, Tahoma, Verdana, Helvetica, Sans-Serif; font-size: 10px; color: #000000;  text-align: center; vertical-align:top; font-weight: bold; }
+
+.top { font-family: Arial, Tahoma, Verdana, Helvetica, Sans-Serif; font-size: 10px; color: #000000;  font-weight: bold; }
+a.top { font-family: Arial, Tahoma, Verdana, Helvetica, Sans-Serif; font-size: 10px; color: #000000; text-decoration: none; }
+a.top:hover { font-family: Arial, Tahoma, Verdana, Helvetica, Sans-Serif; font-size: 10px; color: #000000; text-decoration: underline; }
+a.top:visited { font-family: Arial, Tahoma, Verdana, Helvetica, Sans-Serif; font-size: 10px; color: #000000; text-decoration: none; }
+.themes { font-family: Arial, Tahoma, Verdana, Helvetica, Sans-Serif; font-size: 8pt; }
+.inopressa  { font-family: Sans-Serif; }
+a.inopressa  { font-family: Arial, Tahoma, Verdana, Helvetica, Sans-Serif; text-decoration: none; color: #000000; }
+a.inopressa:hover { font-family: Arial, Tahoma, Verdana, Helvetica, Sans-Serif; color: #cc0000; text-decoration: none}
+
+.progauthor{color:#666666; font:italic Arial, Tahoma, Verdana, Helvetica, sans-serif}
+.progdate{color:#666666; font:italic Arial, Tahoma, Verdana, Helvetica, sans-serif}
+.progtitle{color:#004000; font:bold Arial, Tahoma, Verdana, Helvetica, sans-serif}
+.titlehist{font:bold sans-serif}
+
+a.submenu  { font-family: Arial, Tahoma, Verdana, Helvetica, Sans-Serif; font-size: 11px; font-weight: bold; color: #555555; }
+a.submenu:hover  { font-family: Arial, Tahoma, Verdana, Helvetica, Sans-Serif; font-size: 11px; font-weight: bold; color: #555555; }
+a.submenu:visited  { font-family: Arial, Tahoma, Verdana, Helvetica, Sans-Serif; font-size: 11px; font-weight: bold; color: #555555; }
+//--></style>
+
+<script language="JavaScript">
+
+<!-- 
+var occupied_header = new Array();
+var occupied_menu = new Array();
+
+for(i=1;i<=7;i++) {
+ occupied_header[i] = 0;
+ occupied_menu[i] = 0; 
+}
+
+function n_GetX(El) {
+	var X = 0;
+	do { X += El.offsetLeft } while ((El = El.offsetParent) != null);
+	return X;
+}
+
+function n_GetY(El) {
+	var Y = 0;
+	do { Y += El.offsetTop } while ((El = El.offsetParent) != null);
+	return Y;
+}
+
+function CreateLayer(text, id, t, l,m) {
+if(document.layers)
+ {
+//  t = document.images["i"+id].y-1;
+  var str="<LAYER ID=m" + id + " TOP=" + t + " LEFT=" + l + " onmouseover=\"occupied_menu[" + id + "]=1;\" onmouseout=\"Turn('" + id + "',0);occupied_menu[" + id + "]=0;\" VISIBILITY=hide Z-INDEX=2 bgcolor=\"#FFFFFF\">" + text + "</LAYER>";
+  document.write(str);
+ }
+ else if(document.all)
+ {
+  var strng="<div id=m" + id + " style=\"position:absolute;top:" + t + ";left:" + l + ";visibility:hidden;width:100;z-index:1;\" onmouseover=\"occupied_menu[" + id + "]=1;\" onmouseout=\"Turn('" + id + "',0);occupied_menu[" + id + "]=0;\">" + text + "</div>";
+  document.write(strng);
+ }
+ }
+
+ 
+function Turn(id, mode) {
+ if(document.layers || document.all) {
+  if(mode)
+   eval("setTimeout(\"On(" + id + ");\",100)");
+  else
+   eval("setTimeout(\"Off(" + id + ");\",100)");
+ }
+}
+
+ function On(id){
+  if(occupied_header[id]) {
+   if(document.all) {
+LeftCoord = n_GetX(document.images["im"+id]);
+TopCoord = n_GetY(document.images["im"+id])+34;
+RightCoord = LeftCoord + document.all["m" +id].clientWidth; 
+winBot = 706;
+if (RightCoord > winBot) LeftCoord = LeftCoord - (RightCoord - winBot);
+
+document.all["m" +id].style.left = LeftCoord;
+document.all["m" +id].style.top = TopCoord;
+eval("m" + id).style.visibility = 'visible';
+   }    
+   else if(document.layers) {
+LeftCoord = document.images["im"+id].x;
+TopCoord = document.images["im"+id].y+34;
+RightCoord = LeftCoord + 120; 
+winBot = 706;
+if (RightCoord > winBot) LeftCoord = LeftCoord - (RightCoord - winBot)+1;
+eval('document.layers["m" +id].left = LeftCoord');    
+eval('document.layers["m" +id].top = TopCoord');    
+eval("document.layers['m" + id + "']").visibility = "show";
+   }    
+  }
+ }
+ 
+ function Off(id){
+  if(!occupied_menu[id] && !occupied_header[id]) {
+   if(document.all) {
+    eval("m" + id).style.visibility = 'hidden';
+   }
+   else if(document.layers) {
+    eval("document.layers['m" + id + "']").visibility = "hide";
+   }    
+  }
+ }
+// -->
+
+</script>
+
+<script language=JavaScript>
+<!--//
+v=parseInt(navigator.appVersion.substring(0,1));
+
+
+function openwin (url, w, h)
+{ 
+window.open(url, "", 'menubar=no, directories=no, location=no, resizable=no, scrollbars=no, width=' + w + ', height=' + h);
+}
+
+function MM_openBrWindow(theURL,winName,features) 
+{ //v1.0
+  window.open(theURL,winName,features);
+}
+
+//-->
+</script>
+
+
+</head>
+
+<body bgcolor=#ffffff background=/i/fon.gif leftmargin=8 marginheight=10 marginwidth=8 topmargin=10>
+
+<!---->
+<table cellspacing=0 cellpadding=0 border=0>
+<tr><td><nobr><!a href="#"><img src="/i/top1/1s.gif" width=122 height=23 alt="Текстовая версия" border=0></a><a href=/regions/><img src="/i/top1/2.gif" width=88 height=23 alt="Регионы" border=0></a><a href=/infagency/><img src="/i/top1/3.gif" width=124 height=23 alt="Инфоагентство" border=0></a><a href=/advertising/><img src="/i/top1/4.gif" width=130 height=23 alt="Реклама на Эхе" border=0></a><a href="/map/"><img src="/i/top1/5-1.gif" width=114 height=23 alt="Карта сайта" border=0></a></nobr></td><td background="/i/top1/6.gif" width=126 align=center><nobr><MARQUEE BEHAVIOR width=114 DIRECTION=LEFT SCROLLDELAY=200 SCROLLAMOUNT=10>
+<span style="font-size: 11px;"> Курс доллара 
+на 29 августа - 31 рубль 58 копеек
+ <sub>&nbsp;</sub></nobr></MARQUEE>
+</td></tr></table>
+<table width=700 border=0 cellspacing=0 cellpadding=0 bgcolor=#FFFFFF>
+<tr> 
+<td bgcolor=#666666 rowspan=2 width=1><img src=/i/b.gif width=1 height=1 alt= border=0></td>
+<td width=272 valign="top"><img src=/i/666666.gif width=274 height=1 border=0><br></td>
+<td bgcolor=#999999 rowspan=2 width=1><img src=/i/b.gif width=1 height=1 alt= border=0></td>
+<td width=176 valign="top"><img src=/i/666666.gif width=176 height=1 border=0><br></td>
+<td rowspan=3 background=/i/razdely/gutter3.gif><img src=/i/b.gif width=5 height=1 alt= border=0><img src=/i/999999.gif width=1 height=1></td>
+<td bgcolor=#dcdcdc nowrap width=244 valign="top"><img src=/i/w.gif width=244 height=1 border=0><br></td>
+</tr>
+<tr><td valign=top align=center><table border=0 cellspacing=0 cellpadding=2 width=272><tr><td><table cellspacing=0 cellspadding=0 width=270><nobr>
+<a href=http://www.echo.msk.ru/headings/collection.html><img src=/images/kollekt3.jpg width=120 height=60 border=0 alt="Коллекционер" hspace="0"></a>
+
+<!--<a href=http://www.tretyakov.ru/russian/events/annot87.htm target=blank><img src=/images/tratya.jpg  width=120 height=60 border=0 alt="reklama" hspace="0"></a>//-->
+ 
+
+<!--<a href= http://forum.lesprom.ru/ target=blank><img src=/images/lesprom.gif width=120 height=60 border=0 alt="reklama" hspace="0"></a>//-->
+  
+<a href=http://www.echo.msk.ru/guests/><img src=/images/guest1.gif width=143 height=60 border=0 alt="Гости Эха" hspace="0"></a>
+
+</nobr></table></td></tr></table></td>
+<td align=center><a href=/><img src=/i/logo5.gif width=176 height=65 alt=Радиостанция &quot;Эхо Москвы&quot; border=0><br></a></td>
+<td bgcolor=#efefef nowrap width=244><nobr>
+<a href=http://www.echo.msk.ru/ask.html?id=8532><img src=/images/r_arsen120a.gif width=120 height=60 border=0 alt="radio Arsenal" hspace="0"></a>
+
+<img src=/i/b.gif width=0 height=0><iframe src="http://sj4.lenta.ru/cgi-bin/iframe/echo?7774026" width=120 height=60 marginwidth=0 marginheight=0 scrolling=no frameborder=0><a href="http://sj4.lenta.ru/cgi-bin/href/echo?7774026" target=_top><img src="http://sj4.lenta.ru/cgi-bin/banner/echo?7774026" alt="NTV-barter" width=120 height=60 border=0 ismap></a></iframe>
+  </nobr></td>
+</tr>
+<tr> 
+<td valign=top colspan=4 bgcolor=#dcdcdc><img src=/i/666666.gif width=452 height=1 border=0><br>
+</td>
+<td valign=top bgcolor=#dcdcdc><img src=/i/999999.gif width=244 height=1 border=0><br>
+</td>
+</tr>
+</table>
+
+
+<img src=/i/b.gif width=1 height=4 alt="" border=0><br>
+
+<script language="JavaScript"><!-- 
+txt = new Array();
+
+txt[1] = "";
+CreateLayer(txt[1], 1, 0, 115);
+
+txt[2] = "";
+CreateLayer(txt[2], 2, 0, 115);
+
+txt[3] = "<table width=120 cellspacing=0 cellpadding=0 border=0><tr><td width=1 bgcolor=#cccccc><img src=/i/b.gif width=1 height=1 border=0 alt=\"\"><br></td><td width=6 bgcolor=#ffffff><img src=/i/b.gif width=6 height=1 border=0 alt=\"\"><br></td><td width=100% bgcolor=#ffffff><img src=/i/b.gif width=1 height=4 border=0 alt=\"\"><br><a href=/interview/ class=submenu>Горячие интервью</a><br><img src=/i/b.gif width=1 height=4 border=0 alt=\"\"><br></td><td width=6 bgcolor=#ffffff><img src=/i/b.gif width=6 height=1 border=0 alt=\"\"><br></td><td width=1 bgcolor=#666666><img src=/i/b.gif width=1 height=1 border=0 alt=\"\"><br></td></tr><tr><td colspan=5 background=/i/submenu/hr.gif><img src=/i/b.gif width=1 height=1 border=0 alt=\"\"><br></td></tr><tr><td width=1 bgcolor=#cccccc><img src=/i/b.gif width=1 height=1 border=0 alt=\"\"><br></td><td width=6 bgcolor=#ffffff><img src=/i/b.gif width=6 height=1 border=0 alt=\"\"><br></td><td bgcolor=#ffffff><img src=/i/b.gif width=1 height=4 border=0 alt=\"\"><br><a href=/guests/ class=submenu>Поименный указатель</a><br><img src=/i/b.gif width=1 height=4 border=0 alt=\"\"><br></td><td width=6 bgcolor=#ffffff><img src=/i/b.gif width=6 height=1 border=0 alt=\"\"><br></td><td width=1 bgcolor=#666666><img src=/i/b.gif width=1 height=1 border=0 alt=\"\"><br></td></tr><tr><td colspan=5 bgcolor=#cccccc><img src=/i/b.gif width=1 height=1 border=0 alt=\"\"><br></td></tr><tr><td colspan=5 bgcolor=#666666><img src=/i/b.gif width=1 height=1 border=0 alt=\"\"><br></td></tr></table>";
+CreateLayer(txt[3], 3, 0, 115);
+
+txt[4] = "<table width=160 cellspacing=0 cellpadding=0 border=0><tr><td width=1 bgcolor=#cccccc><img src=/i/b.gif width=1 height=1 border=0 alt=\"\"><br></td><td width=6 bgcolor=#ffffff><img src=/i/b.gif width=6 height=1 border=0 alt=\"\"><br></td><td width=100% bgcolor=#ffffff><img src=/i/b.gif width=1 height=4 border=0 alt=\"\"><br><a href=/headings/deniok.html class=submenu>Ну и денек</a><br><img src=/i/b.gif width=1 height=4 border=0 alt=\"\"><br></td><td width=6 bgcolor=#ffffff><img src=/i/b.gif width=6 height=1 border=0 alt=\"\"><br></td><td width=1 bgcolor=#666666><img src=/i/b.gif width=1 height=1 border=0 alt=\"\"><br></td></tr><tr><td colspan=5 background=/i/submenu/hr.gif><img src=/i/b.gif width=1 height=1 border=0 alt=\"\"><br></td></tr><tr><td width=1 bgcolor=#cccccc><img src=/i/b.gif width=1 height=1 border=0 alt=\"\"><br></td><td width=6 bgcolor=#ffffff><img src=/i/b.gif width=6 height=1 border=0 alt=\"\"><br></td><td bgcolor=#ffffff><img src=/i/b.gif width=1 height=4 border=0 alt=\"\"><br><a href=/headings/cherkizov.html class=submenu>Реплика Черкизова</a><br><img src=/i/b.gif width=1 height=4 border=0 alt=\"\"><br></td><td width=6 bgcolor=#ffffff><img src=/i/b.gif width=6 height=1 border=0 alt=\"\"><br></td><td width=1 bgcolor=#666666><img src=/i/b.gif width=1 height=1 border=0 alt=\"\"><br></td></tr><tr><td colspan=5 background=/i/submenu/hr.gif><img src=/i/b.gif width=1 height=1 border=0 alt=\"\"><br></td></tr><tr><td width=1 bgcolor=#cccccc><img src=/i/b.gif width=1 height=1 border=0 alt=\"\"><br></td><td width=6 bgcolor=#ffffff><img src=/i/b.gif width=6 height=1 border=0 alt=\"\"><br></td><td bgcolor=#ffffff><img src=/i/b.gif width=1 height=4 border=0 alt=\"\"><br><a href=/headings/books.html class=submenu>Книжечки</a><br><img src=/i/b.gif width=1 height=4 border=0 alt=\"\"><br></td><td width=6 bgcolor=#ffffff><img src=/i/b.gif width=6 height=1 border=0 alt=\"\"><br></td><td width=1 bgcolor=#666666><img src=/i/b.gif width=1 height=1 border=0 alt=\"\"><br></td></tr><tr><td colspan=5 background=/i/submenu/hr.gif><img src=/i/b.gif width=1 height=1 border=0 alt=\"\"><br></td></tr><tr><td width=1 bgcolor=#cccccc><img src=/i/b.gif width=1 height=1 border=0 alt=\"\"><br></td><td width=6 bgcolor=#ffffff><img src=/i/b.gif width=6 height=1 border=0 alt=\"\"><br></td><td bgcolor=#ffffff><img src=/i/b.gif width=1 height=4 border=0 alt=\"\"><br><a href=/headings/granit.html class=submenu>Гранит науки</a><br><img src=/i/b.gif width=1 height=4 border=0 alt=\"\"><br></td><td width=6 bgcolor=#ffffff><img src=/i/b.gif width=6 height=1 border=0 alt=\"\"><br></td><td width=1 bgcolor=#666666><img src=/i/b.gif width=1 height=1 border=0 alt=\"\"><br></td></tr><tr><td colspan=5 background=/i/submenu/hr.gif><img src=/i/b.gif width=1 height=1 border=0 alt=\"\"><br></td></tr><tr><td width=1 bgcolor=#cccccc><img src=/i/b.gif width=1 height=1 border=0 alt=\"\"><br></td><td width=6 bgcolor=#ffffff><img src=/i/b.gif width=6 height=1 border=0 alt=\"\"><br></td><td bgcolor=#ffffff><img src=/i/b.gif width=1 height=4 border=0 alt=\"\"><br><a href=/headings/nomed.html class=submenu>Без посредников</a><br><img src=/i/b.gif width=1 height=4 border=0 alt=\"\"><br></td><td width=6 bgcolor=#ffffff><img src=/i/b.gif width=6 height=1 border=0 alt=\"\"><br></td><td width=1 bgcolor=#666666><img src=/i/b.gif width=1 height=1 border=0 alt=\"\"><br></td></tr><tr><td colspan=5 background=/i/submenu/hr.gif><img src=/i/b.gif width=1 height=1 border=0 alt=\"\"><br></td></tr><tr><td width=1 bgcolor=#cccccc><img src=/i/b.gif width=1 height=1 border=0 alt=\"\"><br></td><td width=6 bgcolor=#ffffff><img src=/i/b.gif width=6 height=1 border=0 alt=\"\"><br></td><td bgcolor=#ffffff><img src=/i/b.gif width=1 height=4 border=0 alt=\"\"><br><a href=/headings/repl.html class=submenu>Реплика Нечеркизова</a><br><img src=/i/b.gif width=1 height=4 border=0 alt=\"\"><br></td><td width=6 bgcolor=#ffffff><img src=/i/b.gif width=6 height=1 border=0 alt=\"\"><br></td><td width=1 bgcolor=#666666><img src=/i/b.gif width=1 height=1 border=0 alt=\"\"><br></td></tr><tr><td colspan=5 background=/i/submenu/hr.gif><img src=/i/b.gif width=1 height=1 border=0 alt=\"\"><br></td></tr><tr><td width=1 bgcolor=#cccccc><img src=/i/b.gif width=1 height=1 border=0 alt=\"\"><br></td><td width=6 bgcolor=#ffffff><img src=/i/b.gif width=6 height=1 border=0 alt=\"\"><br></td><td bgcolor=#ffffff><img src=/i/b.gif width=1 height=4 border=0 alt=\"\"><br><a href=/headings/vosadu.html class=submenu>Во саду ли в огороде</a><br><img src=/i/b.gif width=1 height=4 border=0 alt=\"\"><br></td><td width=6 bgcolor=#ffffff><img src=/i/b.gif width=6 height=1 border=0 alt=\"\"><br></td><td width=1 bgcolor=#666666><img src=/i/b.gif width=1 height=1 border=0 alt=\"\"><br></td></tr><tr><td colspan=5 background=/i/submenu/hr.gif><img src=/i/b.gif width=1 height=1 border=0 alt=\"\"><br></td></tr><tr><td width=1 bgcolor=#cccccc><img src=/i/b.gif width=1 height=1 border=0 alt=\"\"><br></td><td width=6 bgcolor=#ffffff><img src=/i/b.gif width=6 height=1 border=0 alt=\"\"><br></td><td bgcolor=#ffffff><img src=/i/b.gif width=1 height=4 border=0 alt=\"\"><br><a href=/headings/oldmsk.html class=submenu>Московские старости</a><br><img src=/i/b.gif width=1 height=4 border=0 alt=\"\"><br></td><td width=6 bgcolor=#ffffff><img src=/i/b.gif width=6 height=1 border=0 alt=\"\"><br></td><td width=1 bgcolor=#666666><img src=/i/b.gif width=1 height=1 border=0 alt=\"\"><br></td></tr><tr><td colspan=5 background=/i/submenu/hr.gif><img src=/i/b.gif width=1 height=1 border=0 alt=\"\"><br></td></tr><tr><td width=1 bgcolor=#cccccc><img src=/i/b.gif width=1 height=1 border=0 alt=\"\"><br></td><td width=6 bgcolor=#ffffff><img src=/i/b.gif width=6 height=1 border=0 alt=\"\"><br></td><td bgcolor=#ffffff><img src=/i/b.gif width=1 height=4 border=0 alt=\"\"><br><a href=/headings/4min.html class=submenu>4 минуты с театром</a><br><img src=/i/b.gif width=1 height=4 border=0 alt=\"\"><br></td><td width=6 bgcolor=#ffffff><img src=/i/b.gif width=6 height=1 border=0 alt=\"\"><br></td><td width=1 bgcolor=#666666><img src=/i/b.gif width=1 height=1 border=0 alt=\"\"><br></td></tr><tr><td colspan=5 background=/i/submenu/hr.gif><img src=/i/b.gif width=1 height=1 border=0 alt=\"\"><br></td></tr><tr><td width=1 bgcolor=#cccccc><img src=/i/b.gif width=1 height=1 border=0 alt=\"\"><br></td><td width=6 bgcolor=#ffffff><img src=/i/b.gif width=6 height=1 border=0 alt=\"\"><br></td><td bgcolor=#ffffff><img src=/i/b.gif width=1 height=4 border=0 alt=\"\"><br><a href=/headings/speakrus.html class=submenu>Говорим по-русски</a><br><img src=/i/b.gif width=1 height=4 border=0 alt=\"\"><br></td><td width=6 bgcolor=#ffffff><img src=/i/b.gif width=6 height=1 border=0 alt=\"\"><br></td><td width=1 bgcolor=#666666><img src=/i/b.gif width=1 height=1 border=0 alt=\"\"><br></td></tr><tr><td colspan=5 background=/i/submenu/hr.gif><img src=/i/b.gif width=1 height=1 border=0 alt=\"\"><br></td></tr><tr><td width=1 bgcolor=#cccccc><img src=/i/b.gif width=1 height=1 border=0 alt=\"\"><br></td><td width=6 bgcolor=#ffffff><img src=/i/b.gif width=6 height=1 border=0 alt=\"\"><br></td><td bgcolor=#ffffff><img src=/i/b.gif width=1 height=4 border=0 alt=\"\"><br><a href=/headings/nosuch.html class=submenu>Не так!</a><br><img src=/i/b.gif width=1 height=4 border=0 alt=\"\"><br></td><td width=6 bgcolor=#ffffff><img src=/i/b.gif width=6 height=1 border=0 alt=\"\"><br></td><td width=1 bgcolor=#666666><img src=/i/b.gif width=1 height=1 border=0 alt=\"\"><br></td></tr><tr><td colspan=5 background=/i/submenu/hr.gif><img src=/i/b.gif width=1 height=1 border=0 alt=\"\"><br></td></tr><tr><td width=1 bgcolor=#cccccc><img src=/i/b.gif width=1 height=1 border=0 alt=\"\"><br></td><td width=6 bgcolor=#ffffff><img src=/i/b.gif width=6 height=1 border=0 alt=\"\"><br></td><td bgcolor=#ffffff><img src=/i/b.gif width=1 height=4 border=0 alt=\"\"><br><a href=/headings/interview.html class=submenu>Интервью с сотрудниками</a><br><img src=/i/b.gif width=1 height=4 border=0 alt=\"\"><br></td><td width=6 bgcolor=#ffffff><img src=/i/b.gif width=6 height=1 border=0 alt=\"\"><br></td><td width=1 bgcolor=#666666><img src=/i/b.gif width=1 height=1 border=0 alt=\"\"><br></td></tr><tr><td colspan=5 background=/i/submenu/hr.gif><img src=/i/b.gif width=1 height=1 border=0 alt=\"\"><br></td></tr><tr><td width=1 bgcolor=#cccccc><img src=/i/b.gif width=1 height=1 border=0 alt=\"\"><br></td><td width=6 bgcolor=#ffffff><img src=/i/b.gif width=6 height=1 border=0 alt=\"\"><br></td><td bgcolor=#ffffff><img src=/i/b.gif width=1 height=4 border=0 alt=\"\"><br><a href=/headings/blues.html class=submenu>Весь этот блюз</a><br><img src=/i/b.gif width=1 height=4 border=0 alt=\"\"><br></td><td width=6 bgcolor=#ffffff><img src=/i/b.gif width=6 height=1 border=0 alt=\"\"><br></td><td width=1 bgcolor=#666666><img src=/i/b.gif width=1 height=1 border=0 alt=\"\"><br></td></tr><tr><td colspan=5 background=/i/submenu/hr.gif><img src=/i/b.gif width=1 height=1 border=0 alt=\"\"><br></td></tr><tr><td width=1 bgcolor=#cccccc><img src=/i/b.gif width=1 height=1 border=0 alt=\"\"><br></td><td width=6 bgcolor=#ffffff><img src=/i/b.gif width=6 height=1 border=0 alt=\"\"><br></td><td bgcolor=#ffffff><img src=/i/b.gif width=1 height=4 border=0 alt=\"\"><br><a href=/comments/ class=submenu>Комментарии недели</a><br><img src=/i/b.gif width=1 height=4 border=0 alt=\"\"><br></td><td width=6 bgcolor=#ffffff><img src=/i/b.gif width=6 height=1 border=0 alt=\"\"><br></td><td width=1 bgcolor=#666666><img src=/i/b.gif width=1 height=1 border=0 alt=\"\"><br></td></tr><tr><td colspan=5 background=/i/submenu/hr.gif><img src=/i/b.gif width=1 height=1 border=0 alt=\"\"><br></td></tr><tr><td width=1 bgcolor=#cccccc><img src=/i/b.gif width=1 height=1 border=0 alt=\"\"><br></td><td width=6 bgcolor=#ffffff><img src=/i/b.gif width=6 height=1 border=0 alt=\"\"><br></td><td bgcolor=#ffffff><img src=/i/b.gif width=1 height=4 border=0 alt=\"\"><br><a href=http://www.echonet.ru class=submenu>ЭхоNet</a><br><img src=/i/b.gif width=1 height=4 border=0 alt=\"\"><br></td><td width=6 bgcolor=#ffffff><img src=/i/b.gif width=6 height=1 border=0 alt=\"\"><br></td><td width=1 bgcolor=#666666><img src=/i/b.gif width=1 height=1 border=0 alt=\"\"><br></td></tr><tr><td colspan=5 background=/i/submenu/hr.gif><img src=/i/b.gif width=1 height=1 border=0 alt=\"\"><br></td></tr><tr><td width=1 bgcolor=#cccccc><img src=/i/b.gif width=1 height=1 border=0 alt=\"\"><br></td><td width=6 bgcolor=#ffffff><img src=/i/b.gif width=6 height=1 border=0 alt=\"\"><br></td><td bgcolor=#ffffff><img src=/i/b.gif width=1 height=4 border=0 alt=\"\"><br><a href=/headings/firstruble.html class=submenu>Мой первый рубль</a><br><img src=/i/b.gif width=1 height=4 border=0 alt=\"\"><br></td><td width=6 bgcolor=#ffffff><img src=/i/b.gif width=6 height=1 border=0 alt=\"\"><br></td><td width=1 bgcolor=#666666><img src=/i/b.gif width=1 height=1 border=0 alt=\"\"><br></td></tr><tr><td colspan=5 background=/i/submenu/hr.gif><img src=/i/b.gif width=1 height=1 border=0 alt=\"\"><br></td></tr><tr><td width=1 bgcolor=#cccccc><img src=/i/b.gif width=1 height=1 border=0 alt=\"\"><br></td><td width=6 bgcolor=#ffffff><img src=/i/b.gif width=6 height=1 border=0 alt=\"\"><br></td><td bgcolor=#ffffff><img src=/i/b.gif width=1 height=4 border=0 alt=\"\"><br><a href=/headings/sprep.html class=submenu>Специальный репортаж</a><br><img src=/i/b.gif width=1 height=4 border=0 alt=\"\"><br></td><td width=6 bgcolor=#ffffff><img src=/i/b.gif width=6 height=1 border=0 alt=\"\"><br></td><td width=1 bgcolor=#666666><img src=/i/b.gif width=1 height=1 border=0 alt=\"\"><br></td></tr><tr><td colspan=5 bgcolor=#cccccc><img src=/i/b.gif width=1 height=1 border=0 alt=\"\"><br></td></tr><tr><td colspan=5 bgcolor=#666666><img src=/i/b.gif width=1 height=1 border=0 alt=\"\"><br></td></tr></table>";
+CreateLayer(txt[4], 4, 0, 115);
+
+txt[5] = "<table width=140 cellspacing=0 cellpadding=0 border=0><tr><td width=1 bgcolor=#cccccc><img src=/i/b.gif width=1 height=1 border=0 alt=\"\"><br></td><td width=6 bgcolor=#ffffff><img src=/i/b.gif width=6 height=1 border=0 alt=\"\"><br></td><td width=100% bgcolor=#ffffff><img src=/i/b.gif width=1 height=4 border=0 alt=\"\"><br><a href=/games/ class=submenu>Тотализаторы</a><br><img src=/i/b.gif width=1 height=4 border=0 alt=\"\"><br></td><td width=6 bgcolor=#ffffff><img src=/i/b.gif width=6 height=1 border=0 alt=\"\"><br></td><td width=1 bgcolor=#666666><img src=/i/b.gif width=1 height=1 border=0 alt=\"\"><br></td></tr><tr><td colspan=5 background=/i/submenu/hr.gif><img src=/i/b.gif width=1 height=1 border=0 alt=\"\"><br></td></tr><tr><td width=1 bgcolor=#cccccc><img src=/i/b.gif width=1 height=1 border=0 alt=\"\"><br></td><td width=6 bgcolor=#ffffff><img src=/i/b.gif width=6 height=1 border=0 alt=\"\"><br></td><td bgcolor=#ffffff><img src=/i/b.gif width=1 height=4 border=0 alt=\"\"><br><a href=http://2000.echo.msk.ru/echotron.html?dec=10 class=submenu>Эхотрон</a><br><img src=/i/b.gif width=1 height=4 border=0 alt=\"\"><br></td><td width=6 bgcolor=#ffffff><img src=/i/b.gif width=6 height=1 border=0 alt=\"\"><br></td><td width=1 bgcolor=#666666><img src=/i/b.gif width=1 height=1 border=0 alt=\"\"><br></td></tr><tr><td colspan=5 bgcolor=#cccccc><img src=/i/b.gif width=1 height=1 border=0 alt=\"\"><br></td></tr><tr><td colspan=5 bgcolor=#666666><img src=/i/b.gif width=1 height=1 border=0 alt=\"\"><br></td></tr></table>";
+CreateLayer(txt[5], 5, 0, 115);
+
+txt[6] = "<table width=140 cellspacing=0 cellpadding=0 border=0><tr><td width=1 bgcolor=#cccccc><img src=/i/b.gif width=1 height=1 border=0 alt=\"\"><br></td><td width=6 bgcolor=#ffffff><img src=/i/b.gif width=6 height=1 border=0 alt=\"\"><br></td><td width=100% bgcolor=#ffffff><img src=/i/b.gif width=1 height=4 border=0 alt=\"\"><br><a href=/history/ class=submenu>История \"Эха Москвы\"</a><br><img src=/i/b.gif width=1 height=4 border=0 alt=\"\"><br></td><td width=6 bgcolor=#ffffff><img src=/i/b.gif width=6 height=1 border=0 alt=\"\"><br></td><td width=1 bgcolor=#666666><img src=/i/b.gif width=1 height=1 border=0 alt=\"\"><br></td></tr><tr><td colspan=5 background=/i/submenu/hr.gif><img src=/i/b.gif width=1 height=1 border=0 alt=\"\"><br></td></tr><tr><td width=1 bgcolor=#cccccc><img src=/i/b.gif width=1 height=1 border=0 alt=\"\"><br></td><td width=6 bgcolor=#ffffff><img src=/i/b.gif width=6 height=1 border=0 alt=\"\"><br></td><td bgcolor=#ffffff><img src=/i/b.gif width=1 height=4 border=0 alt=\"\"><br><a href=http://2000.echo.msk.ru/ class=submenu>История ХХ века</a><br><img src=/i/b.gif width=1 height=4 border=0 alt=\"\"><br></td><td width=6 bgcolor=#ffffff><img src=/i/b.gif width=6 height=1 border=0 alt=\"\"><br></td><td width=1 bgcolor=#666666><img src=/i/b.gif width=1 height=1 border=0 alt=\"\"><br></td></tr><tr><td colspan=5 bgcolor=#cccccc><img src=/i/b.gif width=1 height=1 border=0 alt=\"\"><br></td></tr><tr><td colspan=5 bgcolor=#666666><img src=/i/b.gif width=1 height=1 border=0 alt=\"\"><br></td></tr></table>";
+CreateLayer(txt[6], 6, 0, 115);
+
+txt[7] = "<table width=120 cellspacing=0 cellpadding=0 border=0><tr><td width=1 bgcolor=#cccccc><img src=/i/b.gif width=1 height=1 border=0 alt=\"\"><br></td><td width=6 bgcolor=#ffffff><img src=/i/b.gif width=6 height=1 border=0 alt=\"\"><br></td><td width=100% bgcolor=#ffffff><img src=/i/b.gif width=1 height=4 border=0 alt=\"\"><br><a href=/pressaaboutrussia/ class=submenu>Зарубежная пресса о России</a><br><img src=/i/b.gif width=1 height=4 border=0 alt=\"\"><br></td><td width=6 bgcolor=#ffffff><img src=/i/b.gif width=6 height=1 border=0 alt=\"\"><br></td><td width=1 bgcolor=#666666><img src=/i/b.gif width=1 height=1 border=0 alt=\"\"><br></td></tr><tr><td colspan=5 background=/i/submenu/hr.gif><img src=/i/b.gif width=1 height=1 border=0 alt=\"\"><br></td></tr><tr><td width=1 bgcolor=#cccccc><img src=/i/b.gif width=1 height=1 border=0 alt=\"\"><br></td><td width=6 bgcolor=#ffffff><img src=/i/b.gif width=6 height=1 border=0 alt=\"\"><br></td><td bgcolor=#ffffff><img src=/i/b.gif width=1 height=4 border=0 alt=\"\"><br><a href=http://www.inopressa.ru class=submenu>Inopressa.ru</a><br><img src=/i/b.gif width=1 height=4 border=0 alt=\"\"><br></td><td width=6 bgcolor=#ffffff><img src=/i/b.gif width=6 height=1 border=0 alt=\"\"><br></td><td width=1 bgcolor=#666666><img src=/i/b.gif width=1 height=1 border=0 alt=\"\"><br></td></tr><tr><td colspan=5 bgcolor=#cccccc><img src=/i/b.gif width=1 height=1 border=0 alt=\"\"><br></td></tr><tr><td colspan=5 bgcolor=#666666><img src=/i/b.gif width=1 height=1 border=0 alt=\"\"><br></td></tr></table>";
+CreateLayer(txt[7], 7, 0, 115);
+
+//--></script>
+
+
+<nobr><a href=/><img src=/i/menu01/1.gif width=100 height=38 alt="Главная" border=0"></a><a href=/7news/><img src=/i/menu01/2.gif width=100 height=38 alt="7 новостей" border=0 name=im2></a><a href=/interview/ onmouseover=Turn('3',1);occupied_header[3]=1; onmouseout=Turn('3',0);occupied_header[3]=0;><img src=/i/menu01/3.gif width=100 height=38 alt="Интервью" border=0 name=im3></a><a href=/headings/ onmouseover=Turn('4',1);occupied_header[4]=1; onmouseout=Turn('4',0);occupied_header[4]=0;><img src=/i/menu01/4.gif width=100 height=38 alt="Передачи" border=0 name=im4></a><a href=/games/ onmouseover=Turn('5',1);occupied_header[5]=1; onmouseout=Turn('5',0);occupied_header[5]=0;><img src=/i/menu01/5.gif width=100 height=38 alt="Игры, спорт" border=0 name=im5></a><a href=/history/ onmouseover=Turn('6',1);occupied_header[6]=1; onmouseout=Turn('6',0);occupied_header[6]=0;><img src=/i/menu01/6.gif width=100 height=38 alt="История" border=0 name=im6></a><a href=/pressaaboutrussia/ onmouseover=Turn('7',1);occupied_header[7]=1; onmouseout=Turn('7',0);occupied_header[7]=0;><img src=/i/menu01/7.gif width=100 height=38 alt="Инопресса" border=0 name=im7></a></nobr><br>
+
+<img src=/i/b.gif width=1 height=4 alt="" border=0><br>
+
+<table cellspacing=0 cellpadding=0 border=0><tr valign=top>
+<td width=90><div align=center>
+<!--<table cellspacing=0 cellpadding=0 border=0 width=70><tr><td><img src=/i/b.gif width=1 height=12 alt=""></td></tr></table>-->
+
+<!--
+
+<table cellspacing=0 cellpadding=0 border=0 width=70>
+<tr> 
+<td background="" valign=top width=1><img src=/i/pictmenu/pe-u1.gif width=1 height=28 alt=""></td>
+<td align=center bgcolor=ebebeb background=/i/pictmenu/pe-b.gif>эфир</td>
+<td background="" valign=top width=1><img src=/i/pictmenu/pe-u1.gif width=1 height=28 alt=""></td>
+</tr>
+<tr bgcolor=ebebeb><td background=""><img src=/i/999999.gif width=1 height=8 alt=""></td><td><img src=/i/b.gif width=1 height=8 alt=""></td><td background=""><img src=/i/999999.gif width=1 height=8 alt=""></td></tr><tr> 
+<td background=""><img src=/i/999999.gif width=1 height=110 alt=""></td>
+<td valign=top align=center background="" bgcolor=#ebebeb>
+<a href=http://echo.msk.ru/ra/realecho.ram><img src=/i/pictmenu/pe1.gif width=28 height=28 alt="Прямой эфир (real audio)" border=0></a><br>real audio<br><br>
+<a href=http://real.echo.msk.ru/EchoM-16k.m3u><img src=/i/pictmenu/pe2.gif width=28 height=28 alt="Прямой эфир (mp3)" border=0></a><br></td>
+<td background=""><img src=/i/999999.gif width=1 height=110 alt=""></td>
+</tr>
+<tr> 
+<td bgcolor=999999><img src=/i/b.gif width=1 height=1 alt=""></td>
+<td bgcolor=999999 valign=top><img src=/i/b.gif width=1 height=1 alt=""></td>
+<td bgcolor=999999 valign=top><img src=/i/b.gif width=1 height=1 alt=""></td>
+</tr></table>
+-->
+
+<table cellspacing=0 cellpadding=0 border=0 width=70>
+<tr><td><img src=/i/b.gif width=1 height=7 alt=""></td></tr>
+<tr><td align=center class=menu><a href=/setka1><img src=/images/uho4.gif width=28 height=27 alt="Сетка вещания" border=0></a><br>программа передач</td></tr>
+<tr><td><img src=/i/b.gif width=1 height=7 alt=""></td></tr> 
+<tr><td align=center class=menu><a href=/conf.html><img src=/i/pictmenu/p-f-.gif width=28 height=27 alt="Форумы" border=0></a><br>форумы</td></tr> 
+<tr><td align=center class=menu><img src=/i/b.gif width=1 height=4 alt=""><br><a href=http://old.echo.msk.ru/abr/><img src=/i/pictmenu/photo.gif width=28 height=27 alt="Фотогалерея" border=0></a><br>галерея</td></tr> 
+<tr><td><img src=/i/b.gif width=1 height=7 alt=""></td></tr>
+
+<tr><td align=center class=menu><a href=/sotrudniki/index.html><img src=/i/pictmenu/sotr.gif alt="Сотрудники 'Эха'" border=0 width=28 height=28></a><br>сотрудники</td></tr> 
+<tr><td><img src=/i/b.gif width=1 height=7 alt=""></td></tr>
+<tr><td align=center class=menu><a href=/subscribe><img src=/i/pictmenu/subscr.gif alt="Новости почтой" border=0 width=28 height=27></a><br>новости<br>почтой</td></tr>
+<tr><td><img src=/i/b.gif width=1 height=7 alt=""></td></tr>
+<tr><td align=center class=menu><a href=/auto/index.html><img src=/i/pictmenu/p-a.gif width=27 height=27 alt="Автомобили" border=0></a><br>автомобили</td></tr> 
+<tr><td><img src=/i/b.gif width=1 height=7 alt=""></td></tr>
+<tr><td align=center class=menu><a href=http://www.echonet.ru/><img src=/i/pictmenu/echonet.gif alt="ЭхоNet" border=0 width=28 height=27></a><br>ЭхоNet</td></tr> 
+<tr><td><img src=/i/b.gif width=1 height=7 alt=""></td></tr>
+<tr><td align=center class=menu><!--<a href="#" onClick="javascript:window.open('http://www.echo.msk.ru/pager','pager','toolbar=no,status=no,directories=no,menubar=no,resizable=no,width=350,height=360,scrollbars=no, top=50, left=50');">--><a href=mailto:28291@pager.mtelecom.ru><img src=/i/pictmenu/p-p.gif width=28 height=27 alt="Эфирный пейджер" border=0></a><br>эфирный<br>пейджер</td></tr>
+<tr><td><img src=/i/b.gif width=1 height=7 alt=""></td></tr>
+		</table>
+		<br>
+		<table cellspacing=0 cellpadding=0 border=0 width=70>
+		<tr> 
+			<td background="" valign=top width=1><img src=/i/pictmenu/pe-u.gif width=1 height=28 alt=""></td>
+			<td background=/i/pictmenu/pe-b.gif align=center valign=top bgcolor=ebebeb><img src=/i/pictmenu/p0.gif width=28 height=28 alt=""></td>
+			<td background="" valign=top width=1><img src=/i/pictmenu/pe-u.gif width=1 height=28 alt=""></td>
+		</tr>
+		<tr> 
+			<td background="" valign=top><img src=/i/999999.gif width=1 height=160 alt=""></td>
+			<td background="" valign=top align=center bgcolor=#ebebeb>справки<br>
+				<a href=/buro/rail.html><img src=/i/pictmenu/p1.gif width=34 height=27 vspace=4 alt="Железнодорожные справки" border=0></a><br>
+				<a href=/buro/avia.html><img src=/i/pictmenu/p2.gif width=34 height=29 vspace=4 alt="Расписание авиарейсов" border=0></a><br>
+				<a href=/buro/map.html><img src=/i/pictmenu/p3.gif width=44 height=27 vspace=4 alt="Карта Москвы" border=0></a><br>
+				<a href=/buro/weather.html><img src=/i/pictmenu/p4.gif width=34 height=26 vspace=4 alt="Погода" border=0></a><br>
+				<!--<img src=/i/pictmenu/p5.gif width=34 height=27 vspace=4 alt="" border=0><br>
+				<img src=/i/pictmenu/p6.gif width=34 height=26 vspace=4 alt="" border=0><br>
+				<img src=/i/pictmenu/p7.gif width=34 height=37 vspace=4 alt="" border=0><br>-->
+			</td>
+			<td background="" valign=top><img src=/i/999999.gif width=1 height=160 alt=""></td>
+		</tr>
+		<tr> 
+			<td bgcolor=999999><img src=/i/b.gif width=1 height=1 alt=""></td>
+			<td bgcolor=999999 valign=top><img src=/i/b.gif width=1 height=1 alt=""></td>
+			<td bgcolor=999999 valign=top><img src=/i/b.gif width=1 height=1 alt=""></td>
+		</tr>
+		</table>
+<img src=/i/b.gif width=90 height=36 alt="" border=0><br>
+</div>
+<center>
+<p><IMG alt="Эхо в регионах" height=32 width=69 src=/i/pictmenu/partners.gif><br>"Эхо Москвы"  в регионах
+<TABLE>
+<TR><TD align=center class=top><br>
+<a href=http://www.echomsk.spb.ru/ target=blank class=top>Эхо Петербурга</a><br>
+<a href=http://www.echorostova.ru target=blank class=top>Эхо Ростова</a><br>
+<a href=http://www.radioportal.ru/echovol  target=blank class=top>Эхо Вологды</a><br>
+<a href=http://www.echoekb.ru target=blank class=top>Эхо Москвы в Екатеринбурге</a><br>
+<a href=http://www.fnr.ru/portal/echo1395/  target=blank class=top>Эхо Москвы в Красноярске</a><br>
+<a href=http://www.echo.nsk.ru target=blank class=top>Эхо Москвы в Новосибирске</a><br>
+<a href=http://www.fnr.ru/portal/omskecho/  target=blank class=top>Эхо Москвы в Омске</a><br>
+<a href=http://www.echo.perm.ru target=blank class=top>Эхо Москвы в Перми</a><br>
+<a href=http://www.echo.freeline.ru  target=blank class=top>Эхо Москвы в Cаратове</a><br>
+<a href=http://echo.trtr.ru/index.shtml   target=blank class=top>Эхо Тюмени</a><br>
+<a href=http://www.surbc.ru/cgi-bin/echo/echo.pl?id=1 target=blank class=top>Эхо Москвы в Челябинске</a><br>
+
+</TD>
+</TR>
+</TABLE>
+
+<p><IMG alt="Наши партнеры" height=32 width=69 src=/i/pictmenu/partners.gif><br>наши партнеры
+<TABLE>
+
+<TR><TD align=center class=top>
+<a href=http://lenta.ru target=_blank class=top>Лента.ру</a><br>
+<a href=http://vesti.ru target=_blank class=top>Вести.ру</a><br>
+
+<!--<a href=http://russ.ru/culture/cinema/ target=_blank class=top>проект "Синема"</a><br>//-->
+
+<a href=http://www.tv6.ru target=_blank class=top>ТВ-6</a><br>
+<a href=http://www.ntvru.com target=_blank class=top>НТВРУ.COM</a><br>
+
+<a href=http://www.mn.ru target=_blank class=top>Московские новости</a><br>
+<a href=http://www.kp.ru target=_blank class=top>Комсомольская правда</a><br>
+<a href=http://www.gramota.ru target=_blank class=top>Грамота.ру</a><br>
+<a href=http://www.informnauka.ru target=_blank class=top>Информнаука</a><br>
+
+<!--<a href=http://www.finmarket.ru/ target=_blank class=top>Финмаркет</a><br>//-->
+<!--<a href=http://www.ntvprofit.ru target=_blank class=top>НТВ-Профит</a><br>//-->
+
+<!--<a href=http://gif.ru target=_blank class=top>Марат Гельман</a><br>//-->
+<br><a href="http://www.reka.ru/main.htm" target=_blank class=top>Межбанковское агентство РЕК.А</a><br>
+<br><a href="http://www.hidalgo.ru/" target=_blank class=top>Рекламное агентство Идальго-имидж</a><br><br><br>
+
+<!--<a href=http://www.petersburger-dialog.de target=blank class=top><img src=/images/dialog_logo.gif width=88 height=48 border=0 alt="форум Петербургский диалог"></a><br><br>//-->
+
+<a href=http://www.ej.ru target=_blank class=top><img src=/images/ej_logo.gif width=88 height=31 border=0 alt="Еженедельный журнал"></a><br><br>
+
+<a href=http://chronicle.ru/ target=_blank class=top><img src=/images/chr2_logo.gif width=88 height=31 border=0 alt="Деловая хроника"></a>
+
+<!--<a href=http://gold.chronicle.ru/ target=_blank class=top><img src=/images/chr_logo.jpg width=88 height=31 border=0 alt="спецпроект Деловой хроники"></a>//-->
+
+</TD>
+</TR>
+</TABLE>
+<p>
+<!-- SpyLOG v2 f:0111 --> 
+<script language="javascript"> 
+u="u517.12.spylog.com";d=document;nv=navigator;na=nv.appName;p=1; 
+bv=Math.round(parseFloat(nv.appVersion)*100); 
+n=(na.substring(0,2)=="Mi")?0:1;rn=Math.random(); z="p="+p+"&rn="+rn;y=""; 
+y+="<a href='http://"+u+"/cnt?f=3&p="+p+"&rn="+rn+"' target=_blank>"; 
+y+="<img src='http://"+u+"/cnt?"+z+ 
+"&r="+escape(d.referrer)+ "&pg="+escape(window.location.href)+"' border=0 width=88 height=31 alt='SpyLOG'>"; 
+y+="</a>"; d.write(y); if(!n) { d.write("<"+"!--"); } //--></script><noscript> 
+<a href="http://u517.12.spylog.com/cnt?f=3&p=1" target=_blank> 
+<img src="http://u517.12.spylog.com/cnt?p=1" alt='SpyLOG' border='0' width=88 height=31 > 
+</a> </noscript><script language="javascript1.2"><!-- 
+if(!n) { d.write("--"+">"); }//--></script> 
+<!-- SpyLOG -->
+
+<!--TopList COUNTER--><script language="JavaScript"><!--
+d=document;js=10;a='';a+=';r='+escape(d.referrer)
+//--></script><script language="JavaScript1.1"><!--
+js=11;a+=';j='+navigator.javaEnabled()
+//--></script><script language="JavaScript1.2"><!--
+js=12;s=screen;a+=';s='+s.width+'*'+s.height
+a+=';d='+(s.colorDepth?s.colorDepth:s.pixelDepth)
+//--></script><script language="JavaScript1.3"><!--
+js=13//--></script><script language="JavaScript"><!--
+d.write('<img src="http://top.list.ru/counter'+
+'?id=51076;js='+js+a+'" alt="" height=1 width=1>')
+if(js>11)d.write('<'+'!-- ')//--></script><noscript><img
+src="http://top.list.ru/counter?js=na;id=51076"
+height=1 width=1 alt=""></noscript><script language="JavaScript"><!--
+if(js>11)d.write('--'+'>')
+//--></script><!--TopList COUNTER--><a target=_top href="http://top.list.ru/jump?from=51076"><img src="http://top.list.ru/counter?id=51076;t=52;l=1" border=0 height=31 width=88 alt="TopList"></a>
+<a href=http://top100.rambler.ru><img src="http://images.rambler.ru/top100/banner-88x31-rambler-gray2.gif"
+width=88 height=31 border=0></a>
+<img src=http://www.ranker.ru/scripts/rcounter.dll?id=12289&image=215 border=0 width=1 height=1><a href="http://www.ranker.ru/scripts/sqltmex.dll?tpl=_top_tod_yest.htm&id=12289&category=8&sort=today+desc&page=1" target="_top"><img src="/i/aport.gif" alt="Aport Ranker" border="0"></a><br><br>
+
+</center>
+</td>
+<td width=5><img src=/i/b.gif width=5 height=1 alt="" border=0><br></td>
+<td width=1 bgcolor=#666666><img src=/i/gray.gif width=1 height=7><br></td>
+<td width=438 bgcolor=#ffffff>
+
+<img src=/i/razdely/7news/news.gif width=438 height=30 alt="" border=0><br>
+
+<table width="100%" cellspacing="0" cellpadding=0 border="0"><tr>
+<td><img src=/i/b.gif width=15 height=1 alt=""><br></td>
+<td>
+<p><b>Фидель Кастро считает себя самым счастливым человеком на свете. </b><br>
+<i>14 Августа 2002 09:46:04</i><br>
+<span class=text>Такое заявление он сделал накануне в день своего 76-летия. Что касается экономических проблем страны, то, по словам Кастро, к настоящему моменту, цитирую: "Родина, революция и социализм спасены. В мире нет силы, способной разрушить наши мечты", - заявил лидер острова Свободы. </span><sub>&nbsp;</sub><br>
+
+<img src=/i/delim_long.gif width=386 height=18 alt="" border=0 align=center><br>
+
+<p>
+<table cellspacing=0 cellpadding=0 berder=0><tr valign=top>
+<td><nobr><img src=/i/digits1/1.gif width=25 height=25 alt="" border=0 hspace=2><img src=/i/b.gif width=9 height=1></nobr><br></td>
+<td><i>22:07</i><br><a href=/7news/index.html#det_1 class=inopressa><b>Грузия отвергла предложение Владимира Путина о совместной борьбе с террористами в Панкисском ущелье. </b><br></td></tr></table>
+<div align=right><img src=/i/details_long.gif width=386 height=18 alt="" border=0></div></a><br><p>
+<table cellspacing=0 cellpadding=0 berder=0><tr valign=top>
+<td><nobr><img src=/i/digits1/2.gif width=25 height=25 alt="" border=0 hspace=2><img src=/i/b.gif width=9 height=1></nobr><br></td>
+<td><i>22:07</i><br><a href=/7news/index.html#det_2 class=inopressa><b>Президент России Владимир Путин заявил, что обеспечение денежным довольствием военных по-прежнему является важной темой для государства. </b><br></td></tr></table>
+<div align=right><img src=/i/details_long.gif width=386 height=18 alt="" border=0></div></a><br><p>
+<table cellspacing=0 cellpadding=0 berder=0><tr valign=top>
+<td><nobr><img src=/i/digits1/3.gif width=25 height=25 alt="" border=0 hspace=2><img src=/i/b.gif width=9 height=1></nobr><br></td>
+<td><i>22:09</i><br><a href=/7news/index.html#det_3 class=inopressa><b>В проекте федерального бюджета на следующий год заложены три индексации пенсий, повышение на треть зарплаты бюджетникам, увеличение доплат за ученое звание,  удвоение размера стипендий. </b><br></td></tr></table>
+<div align=right><img src=/i/details_long.gif width=386 height=18 alt="" border=0></div></a><br><p>
+<table cellspacing=0 cellpadding=0 berder=0><tr valign=top>
+<td><nobr><img src=/i/digits1/4.gif width=25 height=25 alt="" border=0 hspace=2><img src=/i/b.gif width=9 height=1></nobr><br></td>
+<td><i>22:10</i><br><a href=/7news/index.html#det_4 class=inopressa><b>Более чем в 15 тысяч рублей обходится снаряжение московского первоклассника в школу. </b><br></td></tr></table>
+<div align=right><img src=/i/details_long.gif width=386 height=18 alt="" border=0></div></a><br><p>
+<table cellspacing=0 cellpadding=0 berder=0><tr valign=top>
+<td><nobr><img src=/i/digits1/5.gif width=25 height=25 alt="" border=0 hspace=2><img src=/i/b.gif width=9 height=1></nobr><br></td>
+<td><i>22:13</i><br><a href=/7news/index.html#det_5 class=inopressa><b>По случаю празднования Дня города 31 августа и 1 сентября московская милиция перейдет на усиленный вариант несения службы. </b><br></td></tr></table>
+<div align=right><img src=/i/details_long.gif width=386 height=18 alt="" border=0></div></a><br><p>
+<table cellspacing=0 cellpadding=0 berder=0><tr valign=top>
+<td><nobr><img src=/i/digits1/6.gif width=25 height=25 alt="" border=0 hspace=2><img src=/i/b.gif width=9 height=1></nobr><br></td>
+<td><i>22:15</i><br><a href=/7news/index.html#det_6 class=inopressa><b> Футболисты московского "Локомотива" вышли в групповой турнир Лиги чемпионов. </b><br></td></tr></table>
+<div align=right><img src=/i/details_long.gif width=386 height=18 alt="" border=0></div></a><br><p>
+<table cellspacing=0 cellpadding=0 berder=0><tr valign=top>
+<td><nobr><img src=/i/digits1/7.gif width=25 height=25 alt="" border=0 hspace=2><img src=/i/b.gif width=9 height=1></nobr><br></td>
+<td><i>15:54</i><br><a href=/7news/index.html#det_7 class=inopressa><b>Большинство опрошенных радиостанцией "Эхо Москвы" считает несправедливым, что государство выплачивает разные по размеру компенсации родственникам погибших в катастрофах вертолета МИ-26 и АПЛ "Курск" военнослужащих. 
+</b><br></td></tr></table>
+<div align=right><img src=/i/details_long.gif width=386 height=18 alt="" border=0></div></a><br>
+</td>
+<td><img src=/i/b.gif width=8 height=1 alt=""><br></td>
+</tr></table>
+</td>
+<td width=1 bgcolor=#666666><img src=/i/gray.gif width=1 height=7><br></td>
+<td width=162 bgcolor=#ffffff>
+<img src=/i/razdely/7news/foto.gif width=162 height=30 alt="" border=0><br>
+<table width=160 cellspacing=0 cellpadding=0 border=0 align=center><tr><td align=center><span class=top><a href="http://www.echo.msk.ru/7news/archive/106677.html" class=top>
+<img src=/images/news/1-1030541284.jpg width=158 height=118 alt="" border=1 style="border-color:#000000"><br>
+<img src=/i/b.gif width=1 height=3 alt="" border="0"><br>
+В Европе возможно будет создан специальный фонд помощи пострадавшим от наводнения</a><br><br></td></tr></table><table width=160 cellspacing=0 cellpadding=0 border=0 align=center><tr><td align=center><span class=top><a href="http://www.echo.msk.ru/7news/archive/106621.html" class=top>
+<img src=/images/news/2-1030524116.jpg width=158 height=118 alt="" border=1 style="border-color:#000000"><br>
+<img src=/i/b.gif width=1 height=3 alt="" border="0"><br>
+29% россиян имели во втором квартале доходы ниже прожиточного минимума.</a><br><br></td></tr></table><table width=160 cellspacing=0 cellpadding=0 border=0 align=center><tr><td align=center><span class=top><a href="http://www.echo.msk.ru/7news/archive/106620.html" class=top>
+<img src=/images/news/3-1030526855.jpg width=158 height=118 alt="" border=1 style="border-color:#000000"><br>
+<img src=/i/b.gif width=1 height=3 alt="" border="0"><br>
+'В пригороде  Красноярска найдено расчленённое тело учёного химика Сергея Бахвалова. Он пропал на прошлой неделе.'</a><br><br></td></tr></table><table width=160 cellspacing=0 cellpadding=0 border=0 align=center><tr><td align=center><span class=top><a href="http://www.echo.msk.ru/7news/archive/106679.html" class=top>
+<img src=/images/news/4-1030541178.jpg width=158 height=118 alt="" border=1 style="border-color:#000000"><br>
+<img src=/i/b.gif width=1 height=3 alt="" border="0"><br>
+Исполком Международного Олимпийского Комитета отказался от рассмотрения вопроса о скандальном судействе турнира фигуристов на Олимпиаде в Америке</a><br><br></td></tr></table><table width=160 cellspacing=0 cellpadding=0 border=0 align=center><tr><td align=center><span class=top><a href="http://www.echo.msk.ru/7news/archive/106678.html" class=top>
+<img src=/images/news/5-1030540808.jpg width=158 height=118 alt="" border=1 style="border-color:#000000"><br>
+<img src=/i/b.gif width=1 height=3 alt="" border="0"><br>
+Домашние животные снижают риск возникновения аллергии у детей</a><br><br></td></tr></table><table width=160 cellspacing=0 cellpadding=0 border=0 align=center><tr><td align=center><span class=top><a href="http://www.echo.msk.ru/7news/archive/106680.html" class=top>
+<img src=/images/news/6-1030540973.jpg width=158 height=118 alt="" border=1 style="border-color:#000000"><br>
+<img src=/i/b.gif width=1 height=3 alt="" border="0"><br>
+По Москве в ближайшие выходные будет очень трудно проехать. Улицы будут перекрыты из-за празднования Дня города</a><br><br></td></tr></table><table width=160 cellspacing=0 cellpadding=0 border=0 align=center><tr><td align=center><span class=top><a href="http://www.echo.msk.ru/7news/archive/106515.html" class=top>
+<img src=/images/news/7-1030450591.gif width=158 height=118 alt="" border=1 style="border-color:#000000"><br>
+<img src=/i/b.gif width=1 height=3 alt="" border="0"><br>
+Реклама пива марки «Клинское» признана побуждающей к совершению опасных действий.</a><br><br></td></tr></table>
+<hr><small><center>благодарим за предоставленные фото сайт <a href=http://ntvru.com>ntvru.com</a></center></small>
+
+
+
+<img src=/i/razdely/7news_archive.gif width=162 height=30 alt="" border=0><br>
+<table width=160 cellspacing=0 cellpadding=6 border=0 align=center><tr><td><p><form action=/7news/search>
+<span style="font-size:12px">Ключевые слова:<br>
+<input type=text name=keywords size=10 value=""><sub>&nbsp;</sub><br>
+Диапазон дат:<br></span>
+<table cellspacing=0 cellpadding=0 border=0><tr>
+<td style="font-size:12px">C:&nbsp;</td><td align=right><select name=fromDate>
+<option value=1>1</option>
+<option value=2>2</option>
+<option value=3>3</option>
+<option value=4>4</option>
+<option value=5>5</option>
+<option value=6>6</option>
+<option value=7>7</option>
+<option value=8>8</option>
+<option value=9>9</option>
+<option value=10>10</option>
+<option value=11>11</option>
+<option value=12>12</option>
+<option value=13>13</option>
+<option value=14>14</option>
+<option value=15>15</option>
+<option value=16>16</option>
+<option value=17>17</option>
+<option value=18>18</option>
+<option value=19>19</option>
+<option value=20>20</option>
+<option value=21>21</option>
+<option value=22>22</option>
+<option value=23>23</option>
+<option value=24>24</option>
+<option value=25>25</option>
+<option value=26>26</option>
+<option value=27>27</option>
+<option value=28>28</option>
+<option value=29 selected>29</option>
+<option value=30>30</option>
+<option value=31>31</option>
+</select><select name=fromMonth>
+<option value=1>Январь</option>
+<option value=2>Февраль</option>
+<option value=3>Март</option>
+<option value=4>Апрель</option>
+<option value=5>Май</option>
+<option value=6>Июнь</option>
+<option value=7>Июль</option>
+<option value=8 selected>Август</option>
+<option value=9>Сентябрь</option>
+<option value=10>Октябрь</option>
+<option value=11>Ноябрь</option>
+<option value=12>Декабрь</option></select></td></tr><tr><td>&nbsp;</td><td align=right><select name=fromYear>
+<option value=1999>1999</option>
+<option value=2000>2000</option>
+<option value=2001>2001</option>
+<option value=2002 selected>2002</option>
+
+</select></td></tr>
+
+<tr><td style="font-size:12px">По:&nbsp;</td><td align=right><select name=toDate>
+<option value=1>1</option>
+<option value=2>2</option>
+<option value=3>3</option>
+<option value=4>4</option>
+<option value=5>5</option>
+<option value=6>6</option>
+<option value=7>7</option>
+<option value=8>8</option>
+<option value=9>9</option>
+<option value=10>10</option>
+<option value=11>11</option>
+<option value=12>12</option>
+<option value=13>13</option>
+<option value=14>14</option>
+<option value=15>15</option>
+<option value=16>16</option>
+<option value=17>17</option>
+<option value=18>18</option>
+<option value=19>19</option>
+<option value=20>20</option>
+<option value=21>21</option>
+<option value=22>22</option>
+<option value=23>23</option>
+<option value=24>24</option>
+<option value=25>25</option>
+<option value=26>26</option>
+<option value=27>27</option>
+<option value=28>28</option>
+<option value=29 selected>29</option>
+<option value=30>30</option>
+<option value=31>31</option>
+</select><select name=toMonth>
+<option value=1>Январь</option>
+<option value=2>Февраль</option>
+<option value=3>Март</option>
+<option value=4>Апрель</option>
+<option value=5>Май</option>
+<option value=6>Июнь</option>
+<option value=7>Июль</option>
+<option value=8 selected>Август</option>
+<option value=9>Сентябрь</option>
+<option value=10>Октябрь</option>
+<option value=11>Ноябрь</option>
+<option value=12>Декабрь</option></select></td></tr><tr><td>&nbsp;</td><td align=right><select name=toYear>
+<option value=1999>1999</option>
+<option value=2000>2000</option>
+<option value=2001>2001</option>
+<option value=2002 selected>2002</option>
+</select></td></tr></table>
+
+<input type=submit value="Искать">
+</form></td></tr></table>
+
+<table border=0 cellspacing=0 cellpadding=6 width=100%><tr><td align=center>
+<!--баннер 100х100 -->
+<script>//<!--
+var rasdel = 1;
+var rndnum = Math.round(Math.random() * 10000);
+document.write("<!--<A HREF='http://www.sigma.ru/cgi-bin/bs100/go.pl?ncsh=");
+document.write(rndnum + "' target='_top'>");
+document.write("<IMG SRC='http://www.sigma.ru/cgi-bin/bs100/banshow.pl?r=");
+document.write(rasdel + "&nocache=" + rndnum);
+document.write("' width=100 height=100");
+document.write(" border=0></A>//-->");
+// --></script>
+<!--конец баннера :) 100х100 -->
+
+</td></tr></table>
+
+
+</td>
+<td width=1 bgcolor=#666666><img src=/i/gray.gif width=1 height=7><br></td>
+</tr></table>
+
+<table cellspacing=0 cellpadding=0 border=0>
+<tr>
+<td width=90><img src=/i/b.gif width=90 height=1 alt="" border=0><br></td>
+<td width=5><img src=/i/b.gif width=5 height=1 alt="" border=0><br></td>
+<td width=603><img src=/i/666666.gif width=603 height=1 alt="" border=0><br></td>
+</tr>
+</table>
+
+<img src=/i/b.gif width=1 height=8 alt="" border=0><br>
+
+<nobr><a href=/><img src="/i/menu01/1.gif" width=100 height=38 alt="" border="0"></a><a href=/7news/><img src="/i/menu01/2.gif" width=100 height=38 alt="" border=0></a><a href=/interview/><img src="/i/menu01/3.gif" width=100 height=38 alt="" border=0></a><a href="/headings/"><img src="/i/menu01/4.gif" width=100 height=38 alt="" border=0></a><a href=/games/><img src="/i/menu01/5.gif" width=100 height=38 alt="" border=0></a><a href="/history/"><img src="/i/menu01/6.gif" width=100 height=38 alt="" border=0></a><a href=/pressaaboutrussia/><img src="/i/menu01/7.gif" width=100 height=38 alt="" border=0></a></nobr><br>
+
+
+<table width=698 cellspacing=0 cellpadding=4 border=0><tr>
+<td width=70%><span class=top><b><nobr>&copy 2000-2001 Радиостанция "Эхо Москвы", e-mail: <a href=mailto:info@echo.msk.ru class=top><font color=#cc0000>info@echo.msk.ru</a></font><br>
+адрес: 119992 Москва, Новый Арбат, 11, телефон: (095) 202-92-29</b></nobr><br>
+При полном или частичном использовании материалов ссылка на &quot;Эхо Москвы&quot; обязательна</td>
+<td width=30% align=right><span class=top>Разработка, дизайн<br>и техническая поддержка<br>
+<a href=http://www.ntvru.com class=top><font color=#cc0000>NTVRU.com</font></a><!--&nbsp;<br>
+Поддержка - <font color=#cc0000 class=top>Евгений Ёрхов</font>&nbsp;<br>
+<a href="http://spr.memonet.ru" class=top><font color=#cc0000>Сергей Пригожий</font></a>&nbsp;</span--></td>
+</tr></table>
+
+</body>
+</html>
