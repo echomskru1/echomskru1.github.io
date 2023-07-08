@@ -1,0 +1,608 @@
+
+<!doctype html>
+<html ⚡="">
+<head>
+    <meta charset="utf-8">
+    <title>Арифметика выживания — Блоги — Эхо Москвы, 09.01.2019</title>
+
+    <link rel="canonical" href="https://echo.msk.ru/blog/s_lomakina/2348687-echo/">
+    <link rel="icon" href="https://echo.msk.ru/favicon.ico?echo" type="image/x-icon">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+
+    <script async="" src="https://cdn.ampproject.org/v0.js"></script>
+
+    <style amp-boilerplate="">body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style>
+    <noscript>
+        <style amp-boilerplate="">body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style>
+    </noscript>
+
+    <script async="" custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
+    <script async="" custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js"></script>
+    <script async="" custom-element="amp-addthis" src="https://cdn.ampproject.org/v0/amp-addthis-0.1.js"></script>
+    <script async="" custom-element="amp-ad" src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"></script>
+    <script async="" custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+
+    <script async="" custom-element="amp-audio" src="https://cdn.ampproject.org/v0/amp-audio-0.1.js"></script>
+    <script async="" custom-element="amp-video" src="https://cdn.ampproject.org/v0/amp-video-0.1.js"></script>
+    <script async="" custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script>
+    <script async="" custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
+
+    <style amp-custom="">
+body {
+    font-size: 16px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+h1 {
+    font-size: 24px;
+    margin: 1em 0;
+}
+p {
+    margin: 1em 0;
+    line-height: 24px;
+}
+.ampstart-headerbar {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0 0 5px 2px rgba(0,0,0,.1);
+    height: 50px;
+    padding: 10px 20px;
+}
+.ampstart-headerbar a {
+    margin-right: auto;
+    margin-left: auto;
+}
+.ampstart-navbar-trigger {
+    font-size: 24px;
+    outline: none;
+    cursor: pointer;
+}
+main {
+    max-width: 700px;
+    margin: 0 auto;
+}
+main article {
+    margin: 20px;
+}
+.ampstart-sidebar {
+    background-color: #000;
+    padding: 20px;
+    color: #fff;
+    font-size: 14px;
+    width: 200px;
+}
+.ampstart-sidebar a {
+    color: #fff;
+    text-decoration: none;
+    line-height: 2;
+}
+.ampstart-sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+.ampstart-sidebar ul ul {
+    padding-left: 10px;
+    font-size: 12px;
+}
+.ampstart-nav-dropdown header {
+    background-color: transparent;
+    padding: 0;
+    border: none;
+    outline: none;
+}
+.ampstart-subtitle {
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #999;
+    margin: 1em 0;
+}
+
+.ampstart-subtitle a {
+    color: inherit;
+}
+
+.ampstart-nav-dropdown header {
+    position: relative;
+}
+
+.ampstart-nav-dropdown header::after {
+    content: "▶";
+    position: absolute;
+    right: 0;
+    line-height: 28px;
+    font-size: 12px;
+}
+.ampstart-nav-dropdown header[aria-expanded=true]::after {
+    content: "▼";
+}
+.article-date {
+    color: #959595;
+    font-size: 12px;
+}
+
+.article-date span {
+    color: #ed1c24;
+}
+
+.program-header {
+    margin: 2em 0;
+    text-align: center;
+    line-height: 1.4;
+    padding-bottom: 2em;
+    border-bottom: 1px solid #999;
+}
+.program-guest__item {
+    display: block;
+    margin-bottom: 1em;
+    text-decoration: none;
+    color: inherit;
+}
+.program-guest__title {
+    display: block;
+    color: #999;
+    text-transform: uppercase;
+    font-size: 10px;
+    margin-bottom: 0.5em;
+}
+.program-guest__name {
+    display: block;
+    font-size: 18px;
+}
+.program-guest__about {
+    display: block;
+    font-size: 12px;
+}
+.program-host__title {
+    margin-top: 2em;
+    margin-bottom: 0.5em;
+    color: #999;
+    text-transform: uppercase;
+    font-size: 10px;
+}
+.program-host__name {
+    font-size: 18px;
+}
+.program-host__name a {
+    text-decoration: none;
+    color: inherit;
+}
+amp-addthis {
+    margin: 0 10px;
+}
+amp-audio, amp-youtube, amp-iframe {
+    margin: 1em 0;
+}
+.blockquote {
+    margin: 2em;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', serif;
+    font-style: italic;
+    position: relative;
+    color: #555;
+}
+.blockquote::before {
+    content: "";
+    width: 2em;
+    border-bottom: 1px solid #555;
+    position: absolute;
+    top: -1em;
+    left: 50%;
+    margin-left: -1em;
+}
+.blockquote::after {
+    content: "";
+    width: 2em;
+    border-top: 1px solid #555;
+    position: absolute;
+    bottom: -1em;
+    left: 50%;
+    margin-left: -1em;
+}
+    </style>
+</head>
+
+<body>
+    <header class="ampstart-headerbar">
+        <a href="https://echo.msk.ru/">
+            <amp-img src="https://echo.msk.ru/i/Echo_of_Moscow_Radio.svg" width="100" height="50" layout="fixed"></amp-img>
+        </a>
+        <div role="button" aria-label="open sidebar" on="tap:header-sidebar.toggle" tabindex="0" class="ampstart-navbar-trigger">☰</div>
+    </header>
+
+    <amp-sidebar id="header-sidebar" side="right" class="ampstart-sidebar" layout="nodisplay">
+        <div class="ampstart-sidebar-header">
+            <div role="button" aria-label="close sidebar" on="tap:header-sidebar.toggle" tabindex="0" class="ampstart-navbar-trigger">✕</div>
+        </div>
+
+        <nav class="ampstart-sidebar-nav ampstart-nav">
+            <ul class="ampstart-label">
+                <li class="ampstart-nav-item ampstart-nav-dropdown">
+                    <amp-accordion layout="container" disable-session-states="" class="ampstart-dropdown">
+                        <section>
+                            <header>
+                                <a class="ampstart-nav-link" href="/news/">Новости</a>
+                            </header>
+                            <ul class="ampstart-dropdown-items">
+                                <li class="ampstart-dropdown-item"><a class="ampstart-nav-link" href="https://twitter.com/EchoMskNews">Твиттер новостей Эха</a></li>
+                                <li class="ampstart-dropdown-item"><a class="ampstart-nav-link" href="/news/own/">Новости Эха</a></li>
+                                <li class="ampstart-dropdown-item"><a class="ampstart-nav-link" href="/top/news.html">Топ-7 новостей</a></li>
+                            </ul>
+                        </section>
+                    </amp-accordion>
+                </li>
+
+                <li class="ampstart-nav-item ampstart-nav-dropdown">
+                    <amp-accordion layout="container" disable-session-states="" class="ampstart-dropdown">
+                        <section>
+                            <header>
+                                <a class="ampstart-nav-link" href="/blog/">Блоги</a>
+                            </header>
+                            <ul class="ampstart-dropdown-items">
+                                <li class="ampstart-dropdown-item"><a class="ampstart-nav-link" href="/top/blogs.html">Топ-7 блогов</a></li>
+                                <li class="ampstart-dropdown-item"><a class="ampstart-nav-link" href="/blog/bloggers.html">Наши блогеры</a></li>
+                            </ul>
+                        </section>
+                    </amp-accordion>
+                </li>
+
+                <li class="ampstart-nav-item">
+                    <a class="ampstart-nav-link" href="/tags/2673/">Сетевизор</a>
+                </li>
+
+                <li class="ampstart-nav-item ampstart-nav-dropdown">
+                    <amp-accordion layout="container" disable-session-states="" class="ampstart-dropdown">
+                        <section>
+                            <header>
+                                <a class="ampstart-nav-link" href="/top/">Топы</a>
+                            </header>
+                            <ul class="ampstart-dropdown-items">
+                                <li class="ampstart-dropdown-item"><a class="ampstart-nav-link" href="/top/programs.html">Топ-7 передач</a></li>
+                                <li class="ampstart-dropdown-item"><a class="ampstart-nav-link" href="/top/guests.html">Топ-7 гостей</a></li>
+                                <li class="ampstart-dropdown-item"><a class="ampstart-nav-link" href="/top/video.html">ТОП-7 видео</a></li>
+                                <li class="ampstart-dropdown-item"><a class="ampstart-nav-link" href="/top/contributors.html">Топ-7 сотрудников</a></li>
+                                <li class="ampstart-dropdown-item"><a class="ampstart-nav-link" href="/top/news.html">Топ-7 новостей</a></li>
+                                <li class="ampstart-dropdown-item"><a class="ampstart-nav-link" href="/top/blogs.html">Топ-7 блогов</a></li>
+                                <li class="ampstart-dropdown-item"><a class="ampstart-nav-link" href="/top/programs.html">Топ-7 интервью</a></li>
+                                <li class="ampstart-dropdown-item"><a class="ampstart-nav-link" href="/top/polls.html">Топ-7 голосований</a></li>
+                            </ul>
+                        </section>
+                    </amp-accordion>
+                </li>
+
+                <li class="ampstart-nav-item ampstart-nav-dropdown">
+                    <amp-accordion layout="container" disable-session-states="" class="ampstart-dropdown">
+                        <section>
+                            <header>
+                                <a class="ampstart-nav-link" href="/polls/">Опросы</a>
+                            </header>
+                            <ul class="ampstart-dropdown-items">
+                                <li class="ampstart-dropdown-item"><a class="ampstart-nav-link" href="http://echo.msk.ru/top/polls.html">Топ-7 голосований</a></li>
+                                <li class="ampstart-dropdown-item"><a class="ampstart-nav-link" href="http://www.echo.msk.ru/polls/">Все голосования</a></li>
+                            </ul>
+                        </section>
+                    </amp-accordion>
+                </li>
+
+                <li class="ampstart-nav-item">
+                    <a class="ampstart-nav-link" href="/ranks/">Рейтинги</a>
+                </li>
+
+                <li class="ampstart-nav-item">
+                    <a class="ampstart-nav-link" href="/sound.html">Эфир</a>
+                </li>
+
+                <li class="ampstart-nav-item ampstart-nav-dropdown">
+                    <amp-accordion layout="container" disable-session-states="" class="ampstart-dropdown">
+                        <section>
+                            <header>
+                                <a class="ampstart-nav-link" href="https://www.youtube.com/channel/UCo4GExFphiUnNiMMExvFWdg/">YouTube</a>
+                            </header>
+                            <ul class="ampstart-dropdown-items">
+                                <li class="ampstart-dropdown-item"><a class="ampstart-nav-link" href="/doc/2119778-echo.html">Сетка</a></li>
+                            </ul>
+                        </section>
+                    </amp-accordion>
+                </li>
+
+                <li class="ampstart-nav-item ampstart-nav-dropdown">
+                    <amp-accordion layout="container" disable-session-states="" class="ampstart-dropdown">
+                        <section>
+                            <header>
+                                <a class="ampstart-nav-link" href="/interview/">Интервью</a>
+                            </header>
+                            <ul class="ampstart-dropdown-items">
+                                <li class="ampstart-dropdown-item"><a class="ampstart-nav-link" href="/top/programs.html">Топ-7 интервью</a></li>
+                            </ul>
+                        </section>
+                    </amp-accordion>
+                </li>
+
+                <li class="ampstart-nav-item">
+                    <a class="ampstart-nav-link" href="/schedule/">Сетка</a>
+                </li>
+
+                <li class="ampstart-nav-item ampstart-nav-dropdown">
+                    <amp-accordion layout="container" disable-session-states="" class="ampstart-dropdown">
+                        <section>
+                            <header>
+                                <a class="ampstart-nav-link" href="/programs/">Передачи</a>
+                            </header>
+                            <ul class="ampstart-dropdown-items">
+                                <li class="ampstart-dropdown-item"><a class="ampstart-nav-link" href="/top/programs.html">Топ-7 передач</a></li>
+                            </ul>
+                        </section>
+                    </amp-accordion>
+                </li>
+
+                <li class="ampstart-nav-item ampstart-nav-dropdown">
+                    <amp-accordion layout="container" disable-session-states="" class="ampstart-dropdown">
+                        <section>
+                            <header>
+                                <a class="ampstart-nav-link" href="/guests/">Гости</a>
+                            </header>
+                            <ul class="ampstart-dropdown-items">
+                                <li class="ampstart-dropdown-item"><a class="ampstart-nav-link" href="/guests/voices/">Вики-голоса</a></li>
+                                <li class="ampstart-dropdown-item"><a class="ampstart-nav-link" href="/top/guests.html">Топ-7 гостей</a></li>
+                                <li class="ampstart-dropdown-item"><a class="ampstart-nav-link" href="/contributors/">Сотрудники</a></li>
+                                <li class="ampstart-dropdown-item"><a class="ampstart-nav-link" href="/top/contributors.html">Топ-7 сотрудников</a></li>                                
+                            </ul>
+                        </section>
+                    </amp-accordion>
+                </li>
+
+                <li class="ampstart-nav-item ampstart-nav-dropdown">
+                    <amp-accordion layout="container" disable-session-states="" class="ampstart-dropdown">
+                        <section>
+                            <header>
+                                <a class="ampstart-nav-link" href="/specialprojects/">Спецпроекты</a>
+                            </header>
+                            <ul class="ampstart-dropdown-items">
+                                <li class="ampstart-dropdown-item"><a class="ampstart-nav-link" href="/tags/3540/">"Эхо Москвы в СПб"</a></li>
+                                <li class="ampstart-dropdown-item"><a class="ampstart-nav-link" href="/blog/echo_rating/1505384-echo/">"100 женщин"</a></li>
+                                <li class="ampstart-dropdown-item"><a class="ampstart-nav-link" href="/blog/polittest/1413140-echo/">Политтест</a></li>
+                            </ul>
+                        </section>
+                    </amp-accordion>
+                </li>
+
+                <li class="ampstart-nav-item ampstart-nav-dropdown">
+                    <amp-accordion layout="container" disable-session-states="" class="ampstart-dropdown">
+                        <section>
+                            <header>
+                                <a class="ampstart-nav-link" href="/about/adv/">Реклама</a>
+                            </header>
+                            <ul class="ampstart-dropdown-items">
+                                <li class="ampstart-dropdown-item"><a class="ampstart-nav-link" href="/advecho.html">Реклама в эфире</a>
+                                <li class="ampstart-dropdown-item"><a class="ampstart-nav-link" href="/advecho.html#advban">Реклама на сайте</a>
+                            </ul>
+                        </section>
+                    </amp-accordion>
+                </li>
+
+                <li class="ampstart-nav-item ampstart-nav-dropdown">
+                    <amp-accordion layout="container" disable-session-states="" class="ampstart-dropdown">
+                        <section>
+                            <header>
+                                <a class="ampstart-nav-link" href="/about/">О нас</a>
+                            </header>
+                            <ul class="ampstart-dropdown-items">
+                                <li class="ampstart-dropdown-item"><a class="ampstart-nav-link" href="http://echo.msk.ru/about/regions/index.html">Регионы</a></li>
+                                <li class="ampstart-dropdown-item"><a class="ampstart-nav-link" href="http://echo.msk.ru/about/vacancy.html">Вакансии</a></li>
+                            </ul>
+                        </section>
+                    </amp-accordion>
+                </li>
+
+                <li class="ampstart-nav-item">
+                    <a class="ampstart-nav-link" href="http://www.forum-tvs.ru/">Форум</a>
+                </li>
+            </ul>
+        </nav>
+    </amp-sidebar>
+
+    <main id="content" role="main">
+        <article>
+            <center>
+		<amp-ad width="300" height="250" type="yandex" data-block-id="R-A-134625-70" data-html-access-allowed="true">
+</amp-ad>
+
+            </center>
+
+
+<header>
+  <div class="ampstart-subtitle">
+    <a href="/blog/s_lomakina/">
+      Светлана Ломакина 
+    </a>
+  </div>
+
+  <time class="article-date">
+    <span>07:11</span>,
+    09 января 2019
+  </time>
+
+  <h1>Арифметика выживания</h1>
+  <div class="program-header">
+    <a href="/blog/s_lomakina/" class="program-guest__item">
+      <span class="program-guest__img">
+	  <amp-img width="120" height="120" layout="fixed"
+	    src="https://cdn.echo.msk.ru/files/avatar2/2974218.jpg">
+	    <noscript>
+	      <img src="https://cdn.echo.msk.ru/files/avatar2/2974218.jpg"
+	    width="105" height="120" alt="Светлана Ломакина ">
+	    </noscript>
+	  </amp-img>
+      </span>
+      <span class="program-guest__name">Светлана Ломакина </span>
+      <span class="program-guest__about">
+	журналист
+      </span>
+    </a>
+  </div>
+</header>
+
+
+ <p>
+<b>Похожа на папу</b> </p>
+<p>
+В общежитской комнате Саши все очень аскетично: тарахтит старый холодильник, ворчит на подоконнике чайник, под кроватью борются за место кроссовки и сапоги. Саша переживает, что, когда приедет фотограф и наснимает ее обычную жизнь, та покажется читателям некрасивой. </p>
+<p>
+— А рассказать о себе готова? — я насторожилась, жду отказа. </p>
+<p>
+— Готова. Потому что сама хочу стать корреспондентом. Только военным. Бабушка говорит, девочке такое не нужно. Но это же бабушка… </p>
+<p>
+Саша вспоминает, как совсем маленькой представляла себя парашютисткой: залезала на крышу сарая, брала в руки мешок и прыгала в копну сена. Ей казалось, что если делать так долго, то рано или поздно она будет парить. Прыгать могла и двадцать раз, и сорок. </p>
+<p>
+«Я характером в папу. Упорная и противная. Он тоже Саша. Когда мы познакомились, сразу почувствовала: мой человек. Это было два года назад. Тогда я нашла папиных родителей, а потом и его самого. Он обрадовался… Но скоро уехал в Сирию, он был офицер, — и его там убили… Я горжусь им и рада, что успела познакомиться, — Саша качается на кровати, смотрит в огромное, почти во всю стену, незанавешенное окно. За окном кружат самолеты. — Папа говорил, что они расстались с мамой, когда мне было два месяца, мама была против общения, но он ходил и носил подарки. А потом у папы началась новая жизнь». </p>
+<p>
+<b>«Он нас с мамой убивал»</b> </p>
+<p>
+Про то, что ее воспитывал отчим, Саша узнала из очередного семейного скандала. Бабушка ругала маму за то, что та позволяет издеваться над дочерью. А мать оправдывала: «Она же ему не родная, поэтому он так относится». Сашу эти слова обварили, но в то же время спасли. Ей очень не хотелось верить, что в ней есть кровь самого ненавистного на земле человека. </p>
+<p>
+<amp-img src="https://cdn.echo.msk.ru/files/3032105.jpg" layout="responsive" width="700" height="467"><noscript><img cdn="true" width="700" height="467" src="https://cdn.echo.msk.ru/files/3032105.jpg" alt="3032105"></noscript></amp-img> <br>
+<i>Александра по дороге к любимой центральной аллее Новочеркасска</i> <br>
+<i>Фото: Алина Десятниченко для ТД</i> </p>
+<p>
+— Отчим нас с мамой убивал. Напивался, брал топор или что подвернется. Своих детей — у меня есть еще две младшие сестры и братик пятилетний — не трогал. А я — чужая и самая старшая… Когда отчим приходил пьяный и начиналось самое страшное, малые спали. Редко что-то слышали. А я не могла уснуть. Потому что ждала — надо было защитить маму. Я могла побежать к соседям. Они разрешили, если что-то случится, и днем и ночью к ним приходить. Они все знали. </p>
+<p>
+— Мама тоже пила? </p>
+<p>
+— Нет! Она нормальная. Просто зависимая от молодого человека, который с ней рядом. Они даже не женаты. И у него и паспорта российского нет. И работы тоже. А она его боится… Давайте не о маме? </p>
+<p>
+— О бабушке? </p>
+<p>
+— О бабушке! — Саша светлеет лицом. — Ее зовут Таня. Она меня вырастила. Потому что как только родились сестры, я стала лишней и все время убегала к ней. Училась в интернате, ходила в патриотический клуб «Десант». Вот там у меня реально началась другая жизнь. </p>
+<p>
+<b>Ангел привел</b> </p>
+<p>
+В «Десант» Сашу привел случай. Или ангел. Если ангел, то звали его, как тренера из «Десанта», — Александр Владимирович. Однажды он увидел, как Саша дерется с девочкой, которая зацепила недобрым словом ее семью. Это было в третьем классе. Уже тогда в каждый удар Саша вкладывала все, что накопила: ненависть к отчиму, обиду на маму и стыд за то, что все знают, как ужасно они живут. Но Александр Владимирович подошел и сказал: «Я понимаю, тебе непросто, надо куда-то деть агрессию. Приходи после уроков в наш клуб — снимешь стресс и научишься защищаться. Нам нужны такие характерные!» </p>
+<p>
+До этого момента Саша не думала, что может быть кому-то нужна. Поэтому побежала. </p>
+<p>
+В «Десанте» ей все нравилось: и рукопашный бой, и стрельба, и фехтование ножами. Но главное — там были прыжки с парашютом. </p>
+<p>
+«Но клубу я благодарна не за парашюты, а за то, что мы остались живы, — рассказывает Саша. — Однажды отчим пришел пьяный, взял топор и сказал, что теперь точно нас убьет. Я вызвала полицию, а мама убежала, он ее к тому времени уже избил. Пока ехал наряд, я оборонялась: выбила топор и уложила отчима на лопатки. Даже не поняла, как смогла! Но потом, после приезда полиции, я убежала из дома. Два месяца жила в Батайске у тетки, там меня нашли и отдали в детский дом. Нас всех отдали. У мамы это был уже не первый случай, что забирали детей. Но раньше временно, а после моего побега и топора — уже все. Она, конечно, ходила, просила. Но от соседей было много заявлений, полиция к нам ездить устала. Условия у нас плохие: домик чуть больше, чем эта комната, — Саша обводит глазами свое новое жилище, цепляется взглядом за шкаф, из-за которого торчат скомканные пакеты, краснеет. — Мы не сопротивлялись, знали, что так лучше». </p>
+<p>
+<b>Два осколка</b> </p>
+<p>
+Лучше, потому что за несколько лет «до топора» был момент, когда Саша думала, что не выживет. В тот вечер мать ушла на ночную смену, она пекла в кондитерской булочки. Отчим вернулся пьяный и увидел, как Саша отчитывает сестер за беспорядок в доме. Он разозлился, взял падчерицу за шею и всадил ее голову в дверь. Дверь была с двойным стеклом. Саша не помнит, насколько было больно, потому что на время оглохла и потеряла чувствительность. Отчим испугался, забрал брата и сестер и убежал, а ее запер, чтобы не пошла жаловаться. Саша не пошла и скорую не вызвала. Убрала крупные стекла, отмыла от крови лицо и легла спать. Утром пришла мама. Осмотрела голову и попросила никому ничего не говорить. Ну а потом вроде затихло все. </p>
+<p>
+— Но года через полтора у меня начала болеть голова. Сильно-сильно. На погоду или когда перенервничаю. Мы с бабушкой в больницу сходили, а там у меня нашли два осколка, — Саша прощупывает их под волосами, ближе к макушке. — Один в коже, зарос, другой глубже. Они мелкие, на глаз не видно. Летом, наверное, будут делать операцию, вытащат, — говорит Саша. </p>
+<p>
+— И снимки рентгеновские есть? — я уточняю, потому что не хочется верить, что и эта история тоже правда. </p>
+<p>
+— Есть, но у бабушки. Здесь, в общаге, у меня своего почти ничего. </p>
+<p>
+<amp-img src="https://cdn.echo.msk.ru/files/3032107.jpg" layout="responsive" width="700" height="467"><noscript><img cdn="true" width="700" height="467" src="https://cdn.echo.msk.ru/files/3032107.jpg" alt="3032107"></noscript></amp-img> <br>
+<i>Александра</i> <br>
+<i>Фото: Алина Десятниченко для ТД</i> </p>
+<p>
+Так вот, до детского дома Саша два месяца не ходила в школу. А если совсем честно, то не два, а гораздо больше — то с головой раненой лежала, то мать спасала, то защищала малых. У нее были свои уроки. Уроки выживания. <br>
+К учебе она вернулась только в детском доме. Там на удивление ей было хорошо. Саша даже не ожидала: отзывчивые преподаватели, дети нормальные, а если что не так, то у Саши есть характер — ни себя, ни малых в обиду не даст. </p>
+<p>
+Мама ходила какое-то время, плакала, обещала исправить ситуацию с жильем и забрать. Но ничего у нее так и не вышло. </p>
+<p>
+— Но мы не жалеем, что не вернулись к маме. У нас дома все время как облако ядовитое висело. Ждали беды. А в детдоме почувствовали себя в безопасности. У меня, оказывается, такие веселые младшие — я раньше даже не знала. Они же сейчас в Москве живут, в семье опекунов Алексея и Олеси. Мне сестры звонят часто, а маме не хотят. Они на нее сильно обижены. </p>
+<p>
+— А ты? </p>
+<p>
+— Я ждала, что, когда нас заберут, а я уеду, она одумается и напишет: «Дочка, привет! Как дела?» А она пишет: «Саша, у меня проблемы. Попроси своего тренера из «Десанта» помочь…» Я молчу, потому что не верю, что это когда-нибудь закончится. Я выросла, понимаю, что бывает другая жизнь и другие семьи. Но мама сделала свой выбор. </p>
+<p>
+<b>На войне, как в детстве</b> </p>
+<p>
+Саша тоже могла бы жить в нормальной семье, Алексей и Олеся звали. Однако у нее был выпускной год, из-за прогулов ситуация очень сложная. Думали даже в коррекционную школу переводить, но тут пришла на помощь «Арифметика добра» — группа высококлассных репетиторов, которые помогают детдомовцам и сиротам сдать экзамены и определиться с профессией. </p>
+<p>
+Саше определяться не надо. Она давно знает, кем хочет быть. Ей нужно было помочь наверстать то, что учили ровесники, пока она спасалась. Если предметно, то это русский, математика, английский и обществознание. </p>
+<p>
+«Ни я, ни мои учителя из школы не верили, что за год можно добрать такой огромный объем материала. Но в «Арифметике добра» очень необычно учат: знания входят в ученика по скайпу сами и застревают в голове». </p>
+<p>
+Саша шутит, конечно. Поработать ей пришлось немало. </p>
+<p>
+«Из всей «Арифметики» больше всего я любила обществознание. Его вела Светлана. Немолодая, но веселая и примеры для уроков приводила всегда из жизни. Мне казалось, что я говорю по видеосвязи не с преподавателем, а с подружкой или старшей сестрой… Короче, благодаря моим репетиторам я спокойно сдала выпускные экзамены». </p>
+<p>
+«Арифметика добра» помогает Саше и сегодня. Пока девушка учится в колледже, а после, когда получит диплом специалиста по рекламе, будет работать и поступать на журфак. Она пишет красивые философские стихи, скачет на лошадях и прыгает с парашютом. </p>
+<p>
+<amp-img src="https://cdn.echo.msk.ru/files/3032109.jpg" layout="responsive" width="700" height="467"><noscript><img cdn="true" width="700" height="467" src="https://cdn.echo.msk.ru/files/3032109.jpg" alt="3032109"></noscript></amp-img> <br>
+<i>Александра в автобусе из Новочеркасска в Ростов-на-Дону в форме военно-спортивного клуба «Патриот»</i> <br>
+<i>Фото: Алина Десятниченко для ТД</i> </p>
+<p>
+«Когда услышала про профессию «военный журналист», почувствовала: это мое!» </p>
+<p>
+Саше настолько приятно об этом говорить, что она не может усидеть на месте. Встает и заправляет за шкаф неправильные, торчащие пакеты. Теперь в комнате по-спартански — ничего лишнего. </p>
+<p>
+— Если мы будем заниматься в том же режиме, что и раньше, я точно поступлю! Как представлю, что еду в другие страны, туда, где тяжелая обстановка или боевые действия, и рассказываю об этом, аж мурашки бегут. Там я буду чувствовать себя нужной. </p>
+<p>
+— Нужной на войне? Как в детстве? </p>
+<p>
+— Может, и так. Но мне хочется, потому что другого я не знаю. А от меня будет польза. Главное, чтобы преподаватели не бросили. </p>
+<p>
+«Арифметика добра» Сашу, а также сотни других ребят из 102 детских домов России не бросит. Педагоги выходят на связь со своими учениками из Москвы, Лондона, Питера, Берлина, Ростова, Рима. Это очень непростая работа, потому что таких, раненных семейными войнами ребят надо не только «натаскивать», но и вытаскивать. На примере Саши вы видите, что получается это у них очень хорошо. Но на специальную образовательную программу нужны деньги. Не заоблачные — вполне подъемные для нас с вами. Помочь Саше и таким ребятам, как она, может даже небольшое ежемесячное пожертвование. Оно войдет в общую копилку и станет тем трамплином, от которого детдомовцы оттолкнутся и полетят во взрослую жизнь по правильной траектории. </p>
+<p>
+А спустя несколько лет вы, хлопоча на кухне под бормотание телика или ноутбука, поймаете краем уха фразу: «С вами была специальный корреспондент Александра Спирова». И вспомните, обязательно вспомните это имя. Улыбнетесь и подумаете, что в том, что Саша нашла свою дорогу, есть и ваше участие. И от этой мысли на сердце у вас станет хорошо.
+ </p>
+<p>
+<a href="https://takiedela.ru/2019/01/arifmetika-vyzhivaniya/?utm_source=mail&amp;utm_medium=media&amp;utm_campaign=mediapartners">Оригинал</a>
+ </p>
+<p>
+      </p>
+<form action="https://nuzhnapomosh.ru/pay/" method="get">
+      <div class="frame" style="border-top: 1px solid #ccc;background: #fff;">
+        <div class="wrap" style="padding: 10px;text-align: center;">
+          <div>
+            <div class="name" style="font: 20px/24px \'PTN77F_W\',Tahoma,Arial,sans-serif; color: #363c3f;padding: 10px;">СДЕЛАТЬ ПОЖЕРТВОВАНИЕ</div>
+            <div style="padding: 10px 0 10px 0;">
+            	<label for="npsh-sum">Сумма</label>
+            	<input type="text" name="pay_sum" value="1000" id="npsh-sum" style="margin: 0 5px 0 5px; padding: 0;">
+            	<label for="npsh-sum">Email</label>
+            	<input type="text" name="pay_email" value="" id="npsh_email" style="margin: 0 5px 0 5px; padding: 0;">
+		<input type="hidden" name="pay_post_id" value="124992">
+		<input type="hidden" name="pay_case_id" value="234">
+            	<input type="submit" class="ibutton" value="Пожертвовать">
+            </div>
+          </div>
+          <div style="padding-top: 10px; text-align: center; clear: both;">
+            <amp-img src="https://takiedela.ru/echo.msk.ru/payments.png" layout="responsive"><noscript><img src="https://takiedela.ru/echo.msk.ru/payments.png"></noscript></amp-img>
+          </div>
+          <div style="padding-top: 10px; text-align: center;">
+            <amp-img src="https://takiedela.ru/echo.msk.ru/case-status/234.png" layout="responsive"><noscript><img src="https://takiedela.ru/echo.msk.ru/case-status/234.png"></noscript></amp-img>
+          </div>
+        </div>
+      </div>
+    </form>
+	
+
+            <center>
+		<amp-ad width="300" height="250" type="yandex" data-block-id="R-A-134625-71" data-html-access-allowed="true">
+</amp-ad>
+
+            </center>
+        </article>
+
+        <amp-addthis
+            width="320"
+            height="92"
+            data-pub-id="ra-59c94fe9d388c849"
+            data-widget-id="zq88">
+        </amp-addthis>
+    </main>
+
+    <amp-analytics id="analytics_liveinternet"><script type="application/json">{ "requests": {
+   "pageview": "https://counter.yadro.ru/hit?u${ampdocUrl};r${documentReferrer};s${screenWidth}*${screenHeight}*32;h${title};${random}"
+ },  "triggers": {  "track pageview": {   "on": "visible",   "request": "pageview"  } }}</script></amp-analytics> 
+
+<amp-analytics type="metrika"><script type="application/json">
+{"vars": { "counterId": "5564395"},
+"triggers": {"notBounce": {"on": "timer","timerSpec": { "immediate": false,"interval": 15,"maxTimerLength": 16},
+"request": "notBounce"}}} </script> </amp-analytics>
+
+<amp-analytics type="topmailru" id="topmailru"><script type="application/json">
+{"vars": {"id": "51076"}}</script></amp-analytics>
+
+<amp-analytics type="top100" id="top100" config="https://kraken.rambler.ru/amp/config.json">
+<script type="application/json">
+{"vars": {"pid": "30780"}}</script></amp-analytics>
+
+</body>
+
+</html>
+
